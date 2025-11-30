@@ -1,0 +1,268 @@
+/* ------------------------------
+   ベース
+--------------------------------*/
+body {
+    font-family: "Shippori Mincho", serif;
+    background: #f5f1ec;
+    margin: 0;
+    padding: 0;
+    color: #6d5c50;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ------------------------------
+   ヘッダー
+--------------------------------*/
+.header {
+    width: 100%;
+    background: #f5f1ec;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header-title {
+    font-size: 32px;
+}
+
+.header-right a {
+    border: 1px solid #c7b8ac;
+    padding: 6px 18px;
+    border-radius: 3px;
+    color: #b39f8a;
+}
+
+/* ------------------------------
+   Contact 入力フォーム
+--------------------------------*/
+.form-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.req {
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #f3f3f3;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.name-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-box label {
+    margin-right: 20px;
+}
+
+.tel-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+textarea {
+    height: 160px;
+}
+
+/* エラー */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ボタン */
+.confirm-button,
+.send-button,
+.edit-button {
+    background: #7f6a58;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-button:hover,
+.send-button:hover,
+.edit-button:hover {
+    opacity: 0.8;
+}
+
+/* ------------------------------
+   Confirm
+--------------------------------*/
+.confirm-container {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.confirm-table th {
+    width: 25%;
+    background: #b8a592;
+    padding: 15px;
+    color: white;
+    text-align: left;
+}
+
+.confirm-table td {
+    background: white;
+    padding: 15px;
+}
+
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* ------------------------------
+   Thanks
+--------------------------------*/
+.thanks-message {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 200px;
+}
+
+.home-button {
+    background: #7f6a58;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+/* ------------------------------
+   Admin リスト
+--------------------------------*/
+.admin-container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.search-area {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.search-area input,
+.search-area select {
+    width: 200px;
+}
+
+.list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-table th {
+    padding: 15px;
+    background: #89755f;
+    color: white;
+}
+
+.list-table td {
+    padding: 15px;
+    background: white;
+}
+
+.list-table tr:hover {
+    background: #f1ebe5;
+}
+
+.detail-button {
+    border: 1px solid #c7b8ac;
+    background: white;
+    padding: 6px 15px;
+    border-radius: 4px;
+}
+
+.detail-button:hover {
+    background: #f2ede8;
+}
+
+/* ------------------------------
+   モーダル
+--------------------------------*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 60%;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* 削除ボタン */
+.delete-button {
+    background: #a54c3c;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 4px;
+    display: block;
+    margin: 40px auto 0;
+}

@@ -1,0 +1,49 @@
+/* ==========================
+   ヘッダー
+========================== */
+
+.site-header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    background: #F5F1ED;
+}
+
+.header-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ロゴ（FashionablyLate） */
+.site-logo {
+    font-size: 32px;
+    font-weight: 600;
+    color: #6D5A50;
+    font-family:  "Georgia", serif;
+}
+
+/* 右上ナビ */
+.header-nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* login / logout / register ボタン */
+.header-btn {
+    padding: 6px 16px;
+    border: 1px solid #D4C7BC;
+    color: #9A8C83;
+    background: transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    opacity: 0.75;
+}
